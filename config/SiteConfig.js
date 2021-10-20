@@ -7,7 +7,7 @@ const config = {
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   siteDescription: "A lightweight, mobile portfolio website with integrated blog for gatsby", // Website description used for RSS feeds/meta description tag.
   siteFBAppID: "", // FB Application ID for using app insights
-  siteGATrackingID: "UA-119572872-1", // Tracking code ID for google analytics.
+  siteGATrackingID: "UA-210640680-1", // Tracking code ID for google analytics.
   disqusShortname: "kronosdevstudio", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
   postDefaultAuthor: 'Gatsby Material Portfolio',
