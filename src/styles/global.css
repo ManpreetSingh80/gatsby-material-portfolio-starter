@@ -1,0 +1,54 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.anchor {
+    background-image: none;
+}
+
+.gatsby-resp-image-link {
+    background-image: none;
+}
+
+.language-javascript>span {
+    font-size: 18px;
+}
+
+:not(pre)>code[class*="language-"] {
+    font-size: 18px;
+}
+
+html {
+    content: ""; /* (ab)using the content property */
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    html {
+        content: 'light'; /* (ab)using the content property */
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  html {
+    content: 'dark'; /* (ab)using the content property */
+  }
+}
+  
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0);
+    border-radius: 10px;
+}
+  
+body::-webkit-scrollbar {
+    opacity: 1;
+    width: 4px;
+    background-color: rgba(0,0,0,0);
+}
+  
+body::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #d84315;
+}

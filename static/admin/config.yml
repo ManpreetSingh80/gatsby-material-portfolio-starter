@@ -1,0 +1,49 @@
+backend:
+  name: github # Refer to https://www.netlifycms.org/docs/authentication-backends/ for auth backend list and instructions
+  branch: master # Branch to update
+  repo: manpreetsingh80/kds # Repo for pushing new commits. Make sure to replace with your repo!
+  base_url: https://oauth.kronosdevstudio.workers.dev
+
+media_folder: static/img
+public_folder: img
+publish_mode: editorial_workflow
+site_url: https://gatsby-material-portfolio-starter.pages.dev
+display_url: https://gatsby-material-portfolio-starter.pages.dev
+logo_url: https://gatsby-material-portfolio-starter.pages.dev/img/site-logo.png
+
+collections:
+  - name: pages
+    label: "Pages"
+    folder: "content"
+    create: true
+    slug: "{{slug}}.md"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "DD-MM-YYYY", dateFormat: "DD-MM-YYYY", timeFormat: false, default: ""}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Page Cover", name: "page-cover", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Show Comments", name: "comments", widget: "boolean", default: true}
+      - {label: "Show Suggestions", name: "suggestion", widget: "boolean", default: true}
+      - {label: "Show Socials", name: "socials", widget: "boolean", default: true}
+
+  - name: blog
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}.md"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "DD-MM-YYYY", dateFormat: "DD-MM-YYYY", timeFormat: false, default: ""}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Page Cover", name: "page-cover", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Show Comments", name: "comments", widget: "boolean", default: true}
+      - {label: "Show Suggestions", name: "suggestion", widget: "boolean", default: true}
+      - {label: "Show Socials", name: "socials", widget: "boolean", default: true}
