@@ -4,6 +4,7 @@ const config = {
   siteTitleAlt: "Gatsby Material Portfolio", // Alternative site title for SEO.
   siteLogo: "/img/site-logo.png", // Logo used for SEO and manifest.
   siteUrl: "https://gatsby-material-portfolio-starter.pages.dev", // Domain of your website without pathPrefix.
+  contactSubmitAPI: "https://oauth.kronosdevstudio.workers.dev/contact", // url where contact form will be submitted
   pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   siteDescription: "A lightweight, mobile portfolio website with integrated blog for gatsby", // Website description used for RSS feeds/meta description tag.
   siteFBAppID: "", // FB Application ID for using app insights
@@ -15,15 +16,25 @@ const config = {
   dateFormat: "DD/MM/YYYY", // Date format for display.
   userTwitter: "@kronosdevstudio", // Optionally renders "Follow Me" in the UserInfo segment.
   userLinks: [
+    // {
+    //   title: "Twitter",
+    //   link: "https://twitter.com/kronosdevstudio",
+    //   icon: 'FaTwitter'
+    // },
+    // {
+    //   title: "Facebook",
+    //   link: "https://facebook.com/kronosdevstudio",
+    //   icon: "FaFacebookF"
+    // },
     {
-      title: "Twitter",
-      link: "https://twitter.com/kronosdevstudio",
-      icon: 'FaTwitter'
+      title: "Github",
+      link: "https://github.com/ManpreetSingh80/gatsby-material-portfolio-starter",
+      icon: "FaGithub"
     },
     {
-      title: "Facebook",
-      link: "https://facebook.com/kronosdevstudio",
-      icon: "FaFacebookF"
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/manpreetsingh80",
+      icon: "FaLinkedinIn"
     }
   ]
 };

@@ -29,6 +29,7 @@ A lightweight, mobile portfolio website with integrated blog for <a href="https:
 </a>
 
 </div>
+
 ## Table of contents
 
 - [gatsby-material-portfolio-starter](#gatsby-material-portfolio-starter)
@@ -36,6 +37,9 @@ A lightweight, mobile portfolio website with integrated blog for <a href="https:
   - [Features](#features)
   - [Quick start](#quick-start)
   - [Folder Structure](#folder-structure)
+  - [Netlify CMS](#netlify-cms)
+  - [Hosting](#hosting)
+  - [Contact form](#contact-form)
   - [License](#license)
 
 ## Features
@@ -49,6 +53,7 @@ A lightweight, mobile portfolio website with integrated blog for <a href="https:
 - Blog
 - Disqus comments
 - SEO
+- Contact form
 - Posts in Markdown with
   - Code syntax highlighting
   - HTML
@@ -67,10 +72,10 @@ A lightweight, mobile portfolio website with integrated blog for <a href="https:
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the haezl starter.
+    Use the Gatsby CLI to create a new site, specifying the gatsby-material-portfolio-starter.
 
     ```sh
-    # create a new Gatsby site using the haezl starter
+    # create a new Gatsby site using the gatsby-material-portfolio-starter
     npx gatsby new my-blog https://github.com/ManpreetSingh80/gatsby-material-portfolio-starter
     ```
 
@@ -97,6 +102,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
     .
     ├── node_modules
+    ├── config
+      ├── siteConfig.js
     ├── src
         ├── cms
         ├── components
@@ -138,6 +145,19 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 12. **`README.md`**: A text file containing useful reference information about your project.
+13. **siteConfig.js**: A js file to stor sit config
+14. **static/admin/config.yml**: Netlify CMS config file
+
+## Netlify CMS
+
+Check out the [Netlify CMS](https://www.netlifycms.org/docs/github-backend/) docs to configure it with your netlify account
+
+## Hosting
+
+This website is hosting at [Cloudflare Pages](https://pages.cloudflare.com/)
+
+## Contact form
+It uses cloudflare workers to upload form data. For more details, check out [cloudflare-github-oauth-with-form-handling](https://github.com/ManpreetSingh80/cloudflare-github-oauth-with-form-handling)
 
 ## License
 

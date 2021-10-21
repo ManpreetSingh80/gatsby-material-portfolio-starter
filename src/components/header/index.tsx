@@ -16,8 +16,7 @@ import HideOnScroll from './hide-on-scroll';
 import Link from '../Link';
 import Dark from '@material-ui/icons/Brightness2';
 import Light from '@material-ui/icons/Brightness2Outlined';
-// import { FaTwitter, FaFacebook } from "react-icons/fa";
-import {FaTwitter, FaFacebookF} from "react-icons/fa";
+import {FaTwitter, FaFacebookF, FaLinkedinIn, FaGithub} from "react-icons/fa";
 import * as config from '../../../config/SiteConfig.js';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -104,8 +103,6 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-const deadUrl = '/about/';
-
 // const categories = [
 //     {
 //         title: 'Extensions',
@@ -139,7 +136,9 @@ const deadUrl = '/about/';
 
 const icons = {
     'twitter': <FaTwitter/>,
-    'facebook': <FaFacebookF/>
+    'facebook': <FaFacebookF/>,
+    'linkedin': <FaLinkedinIn/>,
+    'github': <FaGithub/>
 };
 
 const socials = config.userLinks.map(uL => ({
@@ -148,7 +147,7 @@ const socials = config.userLinks.map(uL => ({
     icon: icons[Object.keys(icons).find(social => uL.link.includes(social))]
 }));
 
-const rightSection = [{title: 'Blog', link: '/blog'}, {title: 'About', link: '/about'}]
+const rightSection = [{title: 'Blog', link: '/blog'}, {title: 'About', link: '/about'}, {title: 'Contact', link: '/contact'}]
 
 const Logo = (props) => <img alt="logo" {...props} src="/img/logo.png" />;
 

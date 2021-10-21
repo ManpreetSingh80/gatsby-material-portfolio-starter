@@ -52,3 +52,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: #d84315;
 }
+
+a#reload_href {
+    color: #0097a7 !important;
+}

@@ -7,7 +7,7 @@ import Cover from '../components/cover';
 import Container from '@material-ui/core/Container';
 import PostLayout from '../components/layouts/post-layout';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import ErrorPage from '../components/404';
+import ContactPage from '../components/contact';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -45,9 +45,9 @@ export default (props) => {
   const classes = useStyles(props);
   const list = data.allMarkdownRemark.edges.map((e: any) => e.node);
   const categories = getCategories(list);
-  const title = `404 | ${config.siteTitle}`;
+  const title = `Contact | ${config.siteTitle}`;
   const cover = 'landing-bg.jpg';
-  const aboutData = {name: config.siteTitle, description: config.siteDescription,
+  const contactData = {name: config.siteTitle, description: config.siteDescription,
      image: config.siteLogo, postPath: props.path, title};
   return (
       <PostLayout categories={categories}>
@@ -60,7 +60,7 @@ export default (props) => {
             <Cover cover={cover} />
         </Container>
         <Container className='MuiPaper-root'>
-            <ErrorPage {...aboutData}/>
+            <ContactPage {...contactData}/>
         </Container>
       </PostLayout>
     );

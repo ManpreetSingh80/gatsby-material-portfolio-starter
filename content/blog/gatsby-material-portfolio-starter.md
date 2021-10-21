@@ -102,10 +102,10 @@ A lightweight, mobile portfolio website with integrated blog for <a href="https:
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the haezl starter.
+    Use the Gatsby CLI to create a new site, specifying the gatsby-material-portfolio-starter.
 
     ```sh
-    # create a new Gatsby site using the haezl starter
+    # create a new Gatsby site using the gatsby-material-portfolio-starter
     npx gatsby new my-blog https://github.com/ManpreetSingh80/gatsby-material-portfolio-starter
     ```
 
