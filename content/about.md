@@ -1,25 +1,14 @@
 ---
-
-title: "About"
-
-date: "22-10-2021"
-
-description: "A lightweight, mobile portfolio website with integrated blog for gatsby"
-
-thumbnail:
-
-page-cover: "landing-bg.jpg"
-
-category: 
-
-tags:
-
-suggestion: false
-
+title: About
+date: 22-10-2021
+description: A lightweight, mobile portfolio website with integrated blog for gatsby
+thumbnail: null
+page-cover: landing-bg.jpg
+category: null
+tags: null
 comments: false
-
-socials: false
-
+suggestion: false
+socials: true
 ---
 
 
